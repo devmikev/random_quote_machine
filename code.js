@@ -71,7 +71,10 @@ const newColor = () => {
 };
 
 const changeColor = () => {
-	$("body").css("background", newColor);
+	let sameColor = newColor();
+	$("body").css("background", sameColor);
+	$("body").css("color", sameColor);
+	$("button").css("background", sameColor);
 };
 
 const changeQuote = () => {
@@ -86,3 +89,7 @@ $("#new-quote").on("click", ()=> {
 	changeColor();
 });
 
+$(document).ready(() => {
+	changeQuote();
+	changeColor();
+});

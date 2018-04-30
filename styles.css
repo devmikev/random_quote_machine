@@ -1,0 +1,20 @@
+body {
+  background:black;
+  transition:background 2s ease;
+}
+
+#quote-box {
+  background: white;
+  width: 40%;
+  margin: 100px auto;
+  padding: 15px;
+  border-radius: 1%;
+  transition:color 2s ease;
+}
+
+button {
+  border: none;
+  padding: 5px;
+  transition:background 2s ease;
+  border-radius: 10%;
+}
