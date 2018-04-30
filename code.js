@@ -61,23 +61,28 @@ const myList = [
   ["When a person can no longer laugh at himself, it is time for others to laugh at him.", "Thomas Szasz"]
 ];
 
-let ranNumGen = (num) => Math.floor(Math.random() * num);
+const ranNumGen = (num) => Math.floor(Math.random() * num);
 
-let changeColor = () => {
+const newColor = () => {
 	let r = ranNumGen(256);
 	let g = ranNumGen(256);
 	let b = ranNumGen(256);
 	return "rgb(" + r + ", " + g + ", " + b + ")";	
 };
 
-$("#new-quote").on("click", ()=> {
+const changeColor = () => {
+	$("body").css("background", newColor);
+};
+
+const changeQuote = () => {
 	let index = ranNumGen(myList.length);
-	console.log(index);
 	$("#text").text(myList[index][0]);
 	$("#author").text(myList[index][1]);
-	console.log(changeColor());
-	$("body").css("background", changeColor);
-});
+};
 
-console.log(myList.length);
+
+$("#new-quote").on("click", ()=> {
+	changeQuote();
+	changeColor();
+});
 
