@@ -93,3 +93,21 @@ $(document).ready(() => {
 	changeQuote();
 	changeColor();
 });
+
+$(".twitter-share-button").on("click", () => {
+	let quote = $("#text").text();
+	let author = $("#author").text();
+	let tweetString = quote + ' ' + author;
+	let tweetHtml = '"';
+	for (let i = 0; i < tweetString.length; i++){
+		if(tweetString[i] === " ") {
+			tweetHtml+= "%20";
+		} else {
+			tweetHtml+= tweetString[i]
+		}
+	}
+	tweetHtml+= '"';
+	tweetHtml = "https://twitter.com/intent/tweet?text=" + tweetHtml;
+	$("a").attr("href", tweetHtml);
+
+});

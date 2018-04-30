@@ -6,15 +6,24 @@ body {
 #quote-box {
   background: white;
   width: 40%;
-  margin: 100px auto;
-  padding: 15px;
+  margin: 200px auto;
+  padding: 25px;
   border-radius: 1%;
   transition:color 2s ease;
 }
 
 button {
   border: none;
-  padding: 5px;
+  padding: 10px;
   transition:background 2s ease;
   border-radius: 10%;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
