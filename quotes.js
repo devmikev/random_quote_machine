@@ -1,3 +1,6 @@
+// I created this array by running DOM querySelectorAll in console after a google search for "list of arrays" and then
+// looping through the elements and adding them to a new list.
+
 let myList = [
 	["You can do anything, but not everything.", "David Allen"],
 	["Perfection is achieved, not when there is nothing …add, but when there is nothing left to take away.", "Antoine de Saint-Exupéry"],
