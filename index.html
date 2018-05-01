@@ -6,16 +6,18 @@
     <script src="http://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div id="quote-box">
-      <h2><span id="text"></span></h2>
+      <h2><i class="fas fa-quote-left fa-2x"></i>&nbsp;<span id="text"></span></h2>
       <h4>-<span id="author"></span></h4>
       <button id="new-quote">New Quote</button>
-      <button id="tweet-quote"><a class="twitter-share-button"
-        href='#'>
-      Tweet</a></button>
+      <button id="tweet-quote" class="twitter-share-button"><a 
+        href='#'><i class="fab fa-twitter"></i>
+      </a></button>
     </div>
     <script src="code.js"></script>
   </body>

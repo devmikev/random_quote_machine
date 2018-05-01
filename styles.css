@@ -1,6 +1,7 @@
 body {
   background:black;
   transition:background 2s ease;
+  font-family: 'Roboto', sans-serif;
 }
 
 #quote-box {
