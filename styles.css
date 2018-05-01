@@ -10,6 +10,7 @@ body {
   padding: 25px;
   border-radius: 1%;
   transition:color 2s ease;
+  text-align: center;
 }
 
 button {
